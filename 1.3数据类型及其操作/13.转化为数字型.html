@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 1.parseInt(变量) i要大写 可以把字符型换为数字型，得到的是整数 
+        //var age = prompt('请输入您的年龄');
+        //console.log(parseInt(age));
+        console.log(parseInt('3.14'));  // 3  得到的是取整的  
+        console.log(parseInt('3.94'));  // 3 取整
+        console.log(parseInt('120px')); // 120去单位px或者说字母
+        console.log(parseInt('rem120pxa')); //NaN
+        // 2.parseFloat(变量) F要大写 可以把字符型换为数字型，得到的是小树 浮点数
+        console.log(parseFloat('3.14'));  //  3.14
+        console.log(parseFloat('120px')); // 120 去单位px或者说字母
+        console.log(parseFloat('rem120px'));   // NaN
+        // 3.利用Number(变量) 里面只要是字符型，把字符型换数字型
+        var str = '123';
+        console.log(Number(str));
+        console.log(Number('12'));
+        // 4.利用算数运算 - * /   隐式转换
+        console.log('12' - 0 ); // 12,先把字符型的12转换数字型12再与0相减
+        console.log('123' - '120'); //3  先把字符型转换为123、120，再两者相减
+        console.log('123' * 1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

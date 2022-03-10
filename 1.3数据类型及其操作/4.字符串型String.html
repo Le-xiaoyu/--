@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 'pink'---字符型，'pink老师'、'true'---字符型 ，12---数字型 ，'12'---字符型。 加了引号的都是字符串类型
+        // var str = '我是一个'nb''的人';----这样写错误，''采取就近原则，中间未被用引号引起。解决方案(外双内单，外单内双)
+        // 单引号内部也可以采用中文双引号强调，也可以用英文双引号强调
+        // <br />为css的换行符或转义字符，在js中不适用
+        var str = '我是一个“nb”的人';  
+        console.log(str);
+        // 字符串转义字符(换行字符) \n或者\u000a 
+        var str = '我是一个"nb"的\n人';  // 外单内双
+        console.log(str);
+        var str = "我是一个'nb'的人";  // 外双内单
+        console.log(str);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
